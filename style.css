@@ -390,6 +390,20 @@ main {
 @media (max-width: 480px) {
     .hero {
         min-height: 50vh;
+        padding: 3rem 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
     }
 
     .books-grid {
