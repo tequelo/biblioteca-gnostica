@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca de Libros | Biblioteca Gnóstica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="index.html" class="logo">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#E0D6C3" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M2 17L12 22L22 17" stroke="#E0D6C3" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M2 12L12 17L22 12" stroke="#E0D6C3" stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="biblioteca.html">Biblioteca de Libros</a>
+                <a href="sobre.html">Sobre el Maestro</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+        </nav>
+    </header>
+
+    <main class="library-page">
+        <section class="library-header">
+            <h1>Biblioteca Completa</h1>
+            <p>Explora la colección, busca por título o filtra por categoría.</p>
+            <div class="search-and-filter">
+                <input type="search" id="search-input" placeholder="Buscar por título o palabra clave...">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">Todos</button>
+                    <button class="filter-btn" data-category="psicologia">Psicología</button>
+                    <button class="filter-btn" data-category="alquimia">Alquimia</button>
+                    <button class="filter-btn" data-category="meditacion">Meditación</button>
+                    <button class="filter-btn" data-category="esoterismo">Esoterismo</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="books-gallery" class="books-grid">
+            <!-- Los libros se cargarán aquí dinámicamente con JavaScript -->
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-nav">
+                <a href="index.html">Inicio</a>
+                <a href="biblioteca.html">Biblioteca</a>
+                <a href="sobre.html">Sobre el Maestro</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <p>&copy; 2025 Biblioteca Gnóstica Digital. Contenido de libre difusión.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
